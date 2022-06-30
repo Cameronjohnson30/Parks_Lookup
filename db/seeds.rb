@@ -14,7 +14,7 @@ class Seed
         managed_by: @random,
         description: Faker::Lorem.sentences(number: 1)
       )
-      puts "Park #{i}: Name is #{park.name} managed by #{park.managed_by} and description is '#{park.description}'."
+      puts "Park #{i}: Name is #{park.name}, Managed by #{park.managed_by}, Description #{park.description}."
     end
   end
 end
