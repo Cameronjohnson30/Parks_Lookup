@@ -1,5 +1,6 @@
 class Seed 
   
+  Park.destroy_all
   def self.begin 
     seed = Seed.new
     seed.generate_parks
