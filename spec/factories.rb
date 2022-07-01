@@ -1,6 +1,7 @@
 FactoryBot.define do
-  factory(:quote) do
+  factory(:park) do
     name {Faker::Name.name}
-    description {Faker::Movie.quote}
+    managed_by {"State"}
+    description {"blah its a park"}
   end
 end
