@@ -7,7 +7,7 @@ class ParksController < ApplicationController
 
   def show
     @park = Park.find(params[:id])
-    json_response(@parks)
+    json_response(@park)
   end
 
   def create
