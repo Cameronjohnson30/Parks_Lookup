@@ -159,6 +159,9 @@ GEM
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
+    will_paginate (3.1.8)
+    will_paginate-bootstrap (1.0.2)
+      will_paginate (>= 3.0.3)
 
 PLATFORMS
   x86_64-darwin-20
@@ -178,6 +181,8 @@ DEPENDENCIES
   spring
   spring-watcher-listen (~> 2.0.0)
   tzinfo-data
+  will_paginate (~> 3.1.1)
+  will_paginate-bootstrap
 
 RUBY VERSION
    ruby 2.6.5p114
