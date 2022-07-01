@@ -1,7 +1,7 @@
 class ParksController < ApplicationController
 
   def index 
-    @parks = Park.all
+    @parks = Park.all.paginate(page: params[:page], per_page: 10)
     json_response(@parks)
   end
 
@@ -33,11 +33,6 @@ class ParksController < ApplicationController
     end
   end 
   
-    private
-  def json_response(object, status = :ok)
-    render json: object, status: status
-  end
-
   def park_params
     params.permit(:name, :managed_by, :description)
   end
