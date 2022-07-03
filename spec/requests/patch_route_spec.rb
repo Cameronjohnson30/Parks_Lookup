@@ -4,7 +4,6 @@ describe "edit a park route", :type => :request do
   before do
     @park = Park.create!(:name => "test_author", :managed_by => "State", :description => "test_content")
     patch "/parks/#{@park.id}", params: { :name => "new_author", :managed_by => "State", :description => "new_content" }
-
   end
 
   it "updates the name, and description" do
