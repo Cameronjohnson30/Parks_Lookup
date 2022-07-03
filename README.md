@@ -28,7 +28,7 @@ _This application populates an api filled with state and national parks with des
 * _run rake db:seed_
 * _run rails s_
 * _run rspec_
-* _open web browser go to localhost:3000_
+* _open web browser go to localhost:3000 to see the json data if using google chrome i beleieve an extension is needed, works with firefox_
 
 ## Testing instructions 
 
@@ -40,7 +40,6 @@ _This application populates an api filled with state and national parks with des
 | GET |	http://localhost:3000/parks?page=1 |	Returns a list of 10 parks in the database
 | GET |	http://localhost:3000/parks?page=2 | 	Returns a list of 10 more parks in the database
 | GET |	http://localhost:3000/parks/274 |	Returns all information related to park with ID=274
-| GET |	http://localhost:3000/parks/search/?name=cameron |	Returns all parks in database where name is cameron
 | POST |	http://localhost:3000/parks?name=cameron&managed_by=State&description=asdgahsdhadskjhdakjhgg 	|Adds park to database. Name: cameron, managed by State, Description: "asdgahsdhadskjhdakjhgg". If POST is succesfull, returns database object for newly created park.
 | PUT/PATCH | 	http://localhost:3000/parks/274?name=Joe Biden |	Updates the name for a park with ID=274. If PUT/PATCH is succesfull, returns database object for newly updated park.
 | DELETE |	http://localhost:3000/parks/274 |	Deletes the park with ID=274 from database
