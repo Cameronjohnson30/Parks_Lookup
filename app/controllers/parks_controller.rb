@@ -19,7 +19,7 @@ class ParksController < ApplicationController
     @park = Park.find(params[:id])
       if @park.update!(park_params)
       render status: 200, json: {
-        message: "This quote has been updated successfully."
+        message: "This park has been updated successfully."
       }
     end
   end
