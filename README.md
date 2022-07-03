@@ -41,7 +41,7 @@ _This application populates an api filled with state and national parks with des
 | GET |	http://localhost:3000/parks?page=2 | 	Returns a list of 10 more parks in the database
 | GET |	http://localhost:3000/parks/274 |	Returns all information related to park with ID=274
 | POST |	http://localhost:3000/parks?name=cameron&managed_by=State&description=asdgahsdhadskjhdakjhgg 	|Adds park to database. Name: cameron, managed by State, Description: "asdgahsdhadskjhdakjhgg". If POST is succesfull, returns database object for newly created park.
-| PUT/PATCH | 	http://localhost:3000/parks/274?name=Joe Biden |	Updates the name for a park with ID=274. If PUT/PATCH is succesfull, returns database object for newly updated park.
+| PUT/PATCH | 	http://localhost:3000/parks/274?name=Joe |	Updates the name for a park with ID=274. If PUT/PATCH is succesfull, returns database object for newly updated park.
 | DELETE |	http://localhost:3000/parks/274 |	Deletes the park with ID=274 from database
 
 ## Known bugs
